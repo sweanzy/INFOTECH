@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doğa Fotoğrafçılığı</title>
+    <style>
+        #divbaslık{
+    background-color:rgb(5, 120, 5);
+    color: white;
+    text-align: center;
+    border: 30px;
+    border-bottom: 8px solid rgba(3, 45, 3, 0.312);
+    padding: 50px 50px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+
+}
+#baslikaltyazi{
+    color: gray;
+}
+
+#hakkımızdadiv{
+ border-bottom: 50px solid lightgreen;
+ border-left: 50px solid lightgreen;
+ border: 3px lightgreen solid;
+ border-radius: 10px 10px 10px 10px;
+ margin-bottom: 50px;
+ margin-top: 50px;
+ margin-left: 15px;
+ margin-right: 15px;
+}
+
+#hakkımızda{
+ margin:20px;
+ color: rgb(21, 122, 21);
+ border-bottom: 3px solid rgb(21, 122, 21);
+}
+
+#ibon{
+    color: darkblue;
+    font-family: Arial,sans-serif;
+    background-color: lightblue;
+    border-left: 2.5px solid darkblue;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.doğamanzarası-wrapper {
+  display: inline-block;
+  justify-content: center; 
+  gap: 30px;             
+  margin-top: 30px;
+  border-bottom: 50px solid darkgreen;
+  border-left: 50px solid darkgreen;
+  border: 4px rgba(0, 100, 0, 0.726) solid;
+  border-radius: 10px 10px 10px 10px;
+  margin: 21px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  overflow: hidden;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+#fotoaltıyazı{
+    color:rgb(152, 145, 145);
+    margin: 20px;
+}
+
+#prof{
+    color: darkred;
+    background-color: rgb(210, 166, 54);
+    background-size: 100% 60%;
+    font-weight: bold;
+    padding: 0 5px;
+    margin: 3px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#ödül{
+ background-color: lightgreen;
+ border-bottom: 20px solid darkgreen;
+ border-left: 20px solid darkgreen;
+ border: 3px darkgreen solid;
+ border-radius: 10px 10px 10px 10px;
+ margin: 20px;
+ padding: 5px;
+}
+
+.galeri-wrapper {
+  display: flex;
+  justify-content: center; 
+  gap: 30px;
+  flex-wrap: wrap;              
+  margin-top: 30px;
+}
+
+.galerifoto{
+  display: inline-flex;
+  flex-direction: column;
+  background-color: rgb(186, 238, 186);
+  border: 3px solid darkgreen;
+  border-radius: 12px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+.kart-container {
+  gap: 30px;
+  padding: 20px;
+  justify-content: center;
+}
+
+
+
+.kart {
+  border: 2px solid #4da6ff;
+  border-radius: 12px;
+  padding: 10px;
+  background: #d9ffd9;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.kartyazı {
+  color: darkgreen;
+  font-weight: bold;
+  margin-top: 25px;     
+  text-align: center;
+  font-size: 24px;
+}
+
+.kartaltıyazı{
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.ibon2{
+    color: darkblue;
+    background-color: lightblue;
+    border-left: 5px solid rgb(42, 42, 193);
+    padding: 17.5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 5px 5px 5px 5px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 647px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.ibonbaslık{
+    color: rgb(0, 0, 129);
+    text-align: left;
+    font-family: arial,sans-serif;
+    font-size: 25px;
+}
+
+.ibonyazı{
+    color: gray;
+    text-align: left;
+    font-size: 20px;
+}
+
+.hizmetler-wrapper {
+  display: flex;
+  justify-content: center; 
+  gap: 15px;     
+  flex-wrap: wrap;                  
+  margin-top: 30px;
+}
+
+.ibon3{
+    border: 3px solid darkblue;
+    background-color: rgb(154, 154, 247);
+    padding: 4.45px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 7px 7px 7px 7px;
+    display: inline-flex;
+    flex-direction: column; 
+    justify-content: center;
+    width: 21.1%;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.ibon3baslık{
+    color: darkblue;
+    font-size: 40px;
+    flex-direction: column;
+    text-align: center;
+
+
+}
+
+.ibon3baslıkaltı{
+    color: darkblue;
+    font-size: bold;
+    text-align: center;
+    flex-direction: column;
+    margin-top: -22px;
+    margin-bottom: 20px;
+    
+}
+
+.ibon4{
+    border: 2px solid darkred;
+    background-color: lightcoral;
+    padding: 24.76px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 5px 5px 5px 5px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 18.43%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.ibon4cerceve{
+    border: 2px solid darkred;
+    border-radius: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+}
+
+.ibon4foto{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ibon4baslık {
+  color: darkred;
+  font-weight: bold;
+  margin-top: 25px;     
+  text-align: center;
+  font-size: 24px;
+}
+
+.ibon4altıyazı{
+    color: darkred;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.ibon5{
+    border: 2px solid darkgoldenrod;
+    background-color: #f6e272;
+    padding: 25px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.ibon5baslık{
+    color: darkgoldenrod;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    text-align: left;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.ibon5altıyazı{
+    color: gray;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.ibon5ozel{
+    border: 2px solid rgb(116, 85, 7);
+    background-color: rgb(200, 147, 126);
+    padding: 25px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.ibon5ozelbaslık{
+    color: brown;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    text-align: left;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.ibonson{
+    border: 2px solid #916932;
+    background-color: #ecab53;
+    padding: 25px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.ibonsonyazı{
+    color:#916932;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    text-align: left;
+    margin-left: 15px;
+}
+
+#divfoot{
+    background-color:blue;
+    color: white;
+    text-align: center;
+    border: 30px;
+    border-top: 8px solid rgb(96, 96, 255);
+    padding: 70px 70px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+
+}
+
+.sonyazı{
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div id="divbaslık">
+        <h1><b>Doğa Fotoğrafçılığı Stüdyosu</b></h1>
+        <p id="baslikaltyazi">Doğanın muhteşem anlarını ölümsüzleştiriyoruz</p>
+    </div>
+    <div id="hakkımızdadiv">
+            <h2 id="hakkımızda"><b>Hakkımızda</b></h2>
+            <p id="ibon">2010 yılından beri doğa fotoğrafçılığında uzmanlaşmış ekibimizle hizmet veriyoruz.</p>
+        <div class="doğamanzarası-wrapper">
+            <img src="https://placehold.co/1420x400/006400/FFFFFF?text=Doğa+Manzarası" alt="" align="center">
+        </div>
+        <p id="fotoaltıyazı">Fotoğraf stüdyomuz,
+            <span id="prof">profesyonel ekipman</span>
+            ve deneyimli fotoğrafçılarımızla doğanın en güzel anlarını yakalıyor.Dağlardan ormanlara,gün batımından vahşi yaşama kadar her alanda uzmanız.
+        </p>
+        <div id="ödül">
+            <p><b>Ödüllerimiz: </b>Ulusal Fotoğraf Yarışması Birincisi (2022). Doğa Koruma Vakfı Özel Ödülü (2023)</p>
+
+        </div>
+    </div>
+    <div id="hakkımızdadiv">
+        <h2 id="hakkımızda">Fotoğraf Galerimiz</h2>
+        <p id="ibon">En beğenilen çalışmalarımızdan örnekler</p>
+<div class="galeri-wrapper">
+
+  <div class="galerifoto">
+    <div class="kart">
+      <img src="https://placehold.co/420x250/006400/FFFFFF?text=Doğa+Manzarası" alt="">
+    </div>
+    <h3 class="kartyazı">Sonsuz Orman</h3>
+    <p class="kartaltıyazı">Yeşilin tüm tonları</p>
+  </div>
+
+  <div class="galerifoto">
+    <div class="kart">
+      <img src="https://placehold.co/420x250/00008b/FFFFFF?text=Dağ+Zirvesi" alt="">
+    </div>
+    <h3 class="kartyazı">Dağ Zirvesi</h3>
+    <p class="kartaltıyazı">Bulutların Üstünde</p>
+  </div>
+
+  <div class="galerifoto">
+    <div class="kart">
+      <img src="https://placehold.co/420x250/b8860b/FFFFFF?text=Gün+Batımı" alt="">
+    </div>
+    <h3 class="kartyazı">Altın Saatler</h3>
+    <p class="kartaltıyazı">Büyülü gün batımı</p>
+  </div>
+
+  <div class="galerifoto">
+    <div class="kart">
+      <img src="https://placehold.co/420x250/1c6071/FFFFFF?text=Nehir+Manzarası" alt="">
+    </div>
+    <h3 class="kartyazı">Akarsu</h3>
+    <p class="kartaltıyazı">Hayat Damarları</p>
+  </div>
+
+  <div class="galerifoto">
+    <div class="kart">
+      <img src="https://placehold.co/420x250/9400d3/FFFFFF?text=Çiçek+Bahçesi" alt="">
+    </div>
+    <h3 class="kartyazı">Çiçek Bahçesi</h3>
+    <p class="kartaltıyazı">Renklerin Dansı</p>
+  </div>
+
+  <div class="galerifoto">
+    <div class="kart">
+      <img src="https://placehold.co/420x250/b22222/FFFFFF?text=Vahşi+Yaşam" alt="">
+    </div>
+    <h3 class="kartyazı">Vahşi Yaşam</h3>
+    <p class="kartaltıyazı">Özgür Ruhlar</p>
+  </div>    
+
+</div>
+</div>
+
+<div id="hakkımızdadiv">
+        <h2 id="hakkımızda">Hizmetlerimiz</h2>
+        <p id="ibon">Profesyonel fotoğrafçılık çözümlerimiz</p>
+        <div class="hizmetler-wrapper">
+        <div class="ibon2">
+            <p class="ibonbaslık">Doğa Fotoğrafçılığı</p>
+            <p class="ibonyazı">Manzara,flora ve fauna fotoğrafçılığında uzman ekibimizle profesyonel çekim hizmeti sunuyoruz.Dağlar,ormanlar,nehirler ve tüm doğal güzellikleri sanat eserine dönüştürüyoruz</p>
+
+        </div>
+        <div class="ibon2">
+            <p class="ibonbaslık">Fotoğraf Eğitimi</p>
+            <p class="ibonyazı">Başlangıç ve ileri seviye fotoğrafçılık kurslarımızla yeteneklerinizi geliştirin.Kompozisyon,ışık kullanımı ve ekipman bilgisi konularında pratik eğitimler veriyoruz.</p>
+
+        </div>
+        <div class="ibon2">
+            <p class="ibonbaslık">Fotoğraf Turları</p>
+            <p class="ibonyazı">Türkiye'nin en güzel doğa noktalarına organize fotoğraf turları düzenliyoruz. Deneyimli rehberlerimizle unutulmaz anılar ve muhteşem kareler yakalayın.</p>
+
+        </div>
+        <div class="ibon2">
+            <p class="ibonbaslık">Profesyonel Baskı</p>
+            <p class="ibonyazı">Fotoğraflarınızı en kaliteli malzemelerle baskı hizmeti sunuyoruz.Canvas, fine art ve metal baskı seçenekleriyle eserlerinizi sergileyin</p>
+
+        </div>
+        </div>  
+        
+</div>
+<div id="hakkımızdadiv">
+        <h2 id="hakkımızda">Rakamlarla biz</h2>
+        <p id="ibon">Başarılarımızı gösteren istatistikler</p>
+        <div class="ibon3">
+            <h3 class="ibon3baslık">15000+</h3>
+            <p class="ibon3baslıkaltı">Çekim sayısı</p>
+        </div>
+        <div class="ibon3">
+            <h3 class="ibon3baslık">350+</h3>
+            <p class="ibon3baslıkaltı">Mutlu Müşteri</p>
+        </div>
+        <div class="ibon3">
+            <h3 class="ibon3baslık">42</h3>
+            <p class="ibon3baslıkaltı">Ödül</p>
+        </div>
+        <div class="ibon3">
+            <h3 class="ibon3baslık">8</h3>
+            <p class="ibon3baslıkaltı">Ülke</p>
+        </div>
+</div>
+<div id="hakkımızdadiv">
+        <h2 id="hakkımızda">Ekibimiz</h2>
+        <p id="ibon">Profesyonel fotoğrafçılarımızla tanışın</p>
+        <div class="ibon4">
+            <div class="ibon4cerceve">
+                <img class="ibon4foto" src="https://placehold.co/250x250/008b00/FFFFFF?text=Ahmet+Y." alt="">
+            </div>
+            <h3 class="ibon4baslık">Ahmet Yılmaz</h3>
+            <p class="ibon4altıyazı">Kurucu Fotoğrafçı</p>
+        </div>
+        <div class="ibon4">
+            <div class="ibon4cerceve">
+                <img class="ibon4foto" src="https://placehold.co/250x250/4a804d/FFFFFF?text=Ayşe+K." alt="">
+            </div>
+            <h3 class="ibon4baslık">Ayşe Kaya</h3>
+            <p class="ibon4altıyazı">Doğa Uzmanı</p>
+        </div>
+        <div class="ibon4">
+            <div class="ibon4cerceve">
+                <img class="ibon4foto" src="https://placehold.co/250x250/1874cd/FFFFFF?text=Mehmet+D." alt="">
+            </div>
+            <h3 class="ibon4baslık">Mehmet Demir</h3>
+            <p class="ibon4altıyazı">Vahşi Yaşam Fotoğrafçısı</p>
+        </div>
+        <div class="ibon4">
+            <div class="ibon4cerceve">
+                <img class="ibon4foto" src="https://placehold.co/250x250/008b8b/FFFFFF?text=Zeynep+A." alt="">
+            </div>
+            <h3 class="ibon4baslık">Zeynep Arslan</h3>
+            <p class="ibon4altıyazı">Eğitim Koordinatörü</p>
+        </div>
+</div>
+<div id="hakkımızdadiv">
+        <h2 id="hakkımızda">Neden Bizi Tercih Etmelisiniz?</h2>
+        <p id="ibon">Farkımızı yaratan özellikler</p>
+        <div class="ibon5">
+            <h3 class="ibon5baslık">Profesyonel Ekipman</h3>
+            <p class="ibon5altıyazı">En son teknoloji Canon,Nikon ve Sony kameralar ile profesyonel lensler kullanıyoruz.Drone çekimleri için DJI Phantom serisi araçlarımız mevcuttur.</p>
+        </div>
+        <div class="ibon5">
+            <h3 class="ibon5baslık">Deneyimli Ekip</h3>
+            <p class="ibon5altıyazı">10 yılı aşkın tecrübeye sahip fotoğrafçılarımız,her türlü hava koşulunda ve arazide çalışma deneyimine sahiptir</p>
+        </div>
+        <div class="ibon5">
+            <h3 class="ibon5baslık">Doğa Dostu Yaklaşım</h3>
+            <p class="ibon5altıyazı">Çekimlerimizde doğaya zarar vermemeyi ilke edindik. İz bırakmama prensibiyle haraket eder,doğal yaşamı rahatsız etmeyiz.</p>
+        </div>
+        <div class="ibon5">
+            <h3 class="ibon5baslık">Hızlı Teslimat</h3>
+            <p class="ibon5altıyazı">Profesyonel düzenleme sürecimizle çekimlerinizi 48 saat içinde teslim ediyoruz.Acil durumlar için 24 saatlik ekspres hizmet seçeneğimiz vardır.</p>
+        </div>
+        <div class="ibon5ozel">
+            <h3 class="ibon5ozelbaslık">Özel Fırsat!!</h3>
+            <p class="ibon5altıyazı">İlk çekiminizde %20 indirim kazanın.</p>
+        </div>
+</div>
+<div id="hakkımızdadiv">
+        <h2 id="hakkımızda">İletişim bilgileri</h2>
+        <p id="ibon">Bizimle iletişime geçin</p>
+        <div class="ibonson">
+            <p class="ibonsonyazı"><b>Adres: </b>Beşiktaş,İstanbul,Türkiye</p>
+            <p class="ibonsonyazı"><b>Telefon: </b><a href="tel:+905551234567">0 555 123 45 67</a></p>
+            <p class="ibonsonyazı"><b>E-Posta: </b><a href="mailto:info@dogafotografi.com">info@dogafotografi.com</a></p>
+            <p class="ibonsonyazı"><b>Website: </b><a href="https://www.dogafotografi.com">www.dogafotografi.com</a></p>
+            <p class="ibonsonyazı"><b>Çalışma Saatleri: </b>Pazartesi-Cuma: 09:00 - 18:00</p>
+            <p class="ibonsonyazı"><b>Sosyal Medya: </b>Instagram,Facebook,Twitter hesaplarımızdan bizi takip edin.</p>
+        </div>
+<footer>
+</div>    
+<div id="divfoot">
+    <p class="sonyazı"><small>&copy </small>2024 Doğa Fotoğrafçılığı stüdyosu. Tüm hakları saklıdır.</p>
+    <p class="sonyazı">CSS Seçiciler Örnek Projesi - Sözde Sınıflar ve Sözde Örnekler Kullanılmamıştır.</p>
+    <p class="sonyazı">Tasarım ve Geliştirme Web Studio</p>
+</div>
+</footer>
+</body>
+</html>
